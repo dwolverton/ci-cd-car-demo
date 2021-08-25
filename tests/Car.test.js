@@ -62,4 +62,9 @@ describe("Car class", () => {
     car.brake();
     expect(car.speed).toBe(19);
   });
+  test("functionality of brake method: starting at 0", () => {
+    const car = new Car();
+    car.brake();
+    expect(car.speed).toBe(0);
+  });
 });

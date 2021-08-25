@@ -13,7 +13,11 @@ class Car {
 
   // subtract 1 from speed, but never go below 0
   brake() {
-    this.speed--;
+    if (this.speed === 0) {
+    // do nothing here  
+    } else {
+      this.speed--;
+    }
   }
 }
 
