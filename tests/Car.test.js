@@ -43,4 +43,28 @@ describe("Car class", () => {
     // Assert
     expect(car.speed).toBe(12);
   });
+  test("functionality of brake method: starting at 1", () => {
+    // Arrange: create a car with speed 1
+    const car = new Car(1);
+    // Act: calling the brake function
+    car.brake();
+    // Assert
+    expect(car.speed).toBe(0);
+  });
+  test("functionality of brake method, called twice: starting at 2", () => {
+    const car = new Car(2);
+    car.brake();
+    car.brake();
+    expect(car.speed).toBe(0);
+  });
+  test("functionality of brake method: starting at 20", () => {
+    const car = new Car(20);
+    car.brake();
+    expect(car.speed).toBe(19);
+  });
+  test("functionality of brake method: starting at 0", () => {
+    const car = new Car();
+    car.brake();
+    expect(car.speed).toBe(0);
+  });
 });

@@ -12,7 +12,13 @@ class Car {
   }
 
   // subtract 1 from speed, but never go below 0
-  brake() {}
+  brake() {
+    if (this.speed === 0) {
+    // do nothing here  
+    } else {
+      this.speed--;
+    }
+  }
 }
 
 module.exports = Car;
