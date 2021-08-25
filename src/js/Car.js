@@ -12,7 +12,9 @@ class Car {
   }
 
   // subtract 1 from speed, but never go below 0
-  brake() {}
+  brake() {
+    this.speed--;
+  }
 }
 
 module.exports = Car;
