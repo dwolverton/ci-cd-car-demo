@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: rgb(96, 96, 96);
+}
+
+label {
+  color: #222;
+  font-weight: bold;
+}
