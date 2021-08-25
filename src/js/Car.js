@@ -7,7 +7,9 @@ class Car {
   }
 
   // add 1 to speed
-  accelerate() {}
+  accelerate() {
+    this.speed++;
+  }
 
   // subtract 1 from speed, but never go below 0
   brake() {}
